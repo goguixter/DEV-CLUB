@@ -1,0 +1,342 @@
+	Modulo 1 - HTML
+
+SIGNIFICADO:
+
+HyperText Markup Language
+Linguagem de marcação de hipertextos
+
+No inicio os sites eram chamados de hipertextos
+
+Hipertexto = Site
+Linguagem = Forma de se comunicar
+Marcação = Etiquetas/Tags
+
+____________________________________
+Tags: 
+
+Abertura <> 
+Fechamento </>
+Letra minuscula. Ex: <p> Meu paragrafo</p>
+
+Nem todas tags tem abertura e fechamento
+Ex: <input> | <img>
+
+Parametros: 
+<img src="....
+<input type="...
+
+____________________________________
+Estrutura de uma pagina HTML
+
+DOCTYPE HTML
+TAG HTML <html> site </html>
+<head> cabeça/cabeçalho do site </head>
+<body> corpo do site </body>
+
+____________________________________
+SEO - SEARCH ENGINE OPTMIZATION
+OTIMIZAÇÃO DOS MOTORES DE BUSCA
+
+ESTRATEGIAS PARA ALAVANCAR A POSIÇÃO NO RANKING DE BUSCAS
+
+____________________________________
+PRINCIPAIS TAGS PARA TEXTO:
+
+TITULOS
+<h1>TITULO MAIS IMPORTANTE</h1>
+de 1 a 6 conforme importancia
+<h6>TITULO MENOS IMPORTANTE</h6>
+
+PARAGRAFOS
+<p> </p>
+pode usar quantos paragrafos quiser
+<br> = quebra de linha abreviação de break
+<b>negrito</b>
+<i>italico</i>
+<strong> palavra importante para mecanismos de buscas
+
+___________________________________
+LINKS
+TAG <a> clique em mim por favor</a>
+href="
+usar https://
+abrir em nova aba: target="_blank
+
+enviar email →
+href="mailto:email
+
+fazer ligação
+href="+5551555555555
+
+ir para outra pagina
+href="./nome da pagina.html
+
+ir para local especifico da pagina
+href="#nomedolocal
+*usar o parametro id para identificar o local
+
+____________________________________
+LISTAS
+2 TIPOS
+ORDENADAS E NÃO ORDENADAS
+
+ORDENADA: 
+<ol>
+	<li>item da lista</li>
+	<li>item da lista</li>
+</ol>
+ex:.
+1. item
+2. item
+3. item
+
+NÃO ORDENADA:
+<ul>
+	<li>item da lista</li>
+	<li>item da lista</li>
+</ul>
+ex:.
+- item
+- item
+- item
+____________________________________
+ELEMENTOS ESTRUTURAIS
+
+<div> </div> é literalmente uma caixa. É utilizada para separar conteudos.
+
+<span> </span> uma caixa menor mais utilizada para textos pequenos. ajuda a mudar somente uma pequena parte de um texto.
+
+ambos irão ajudar na estilização.
+____________________________________
+IMAGENS
+<img>
+
+src=" origem da imagem
+
+alt=" texto alternativo caso a imagem nao carregue
+
+<figure> </figure>
+<figcaption>Legenda da imagem <figcaption>
+
+altura - height="
+largura - width="
+
+____________________________________
+TABELAS:
+<table> </table>
+<tr> 
+<th> cabeçalho
+<td> descrição 
+
+parametros
+border="
+cellpaddin=" (distanciamento)
+bordercollor="
+____________________________________
+Videos
+<video src=" 
+controls controlsList="nodownload
+autoplay
+muted
+poster
+height
+width
+____________________________________
+iFrame
+<iframe>Site dentro do site</site>
+height
+width
+compartilhar→incorporar
+funciona para google maps, youtube e outros
+____________________________________
+
+INPUTS
+<input aucomplete="street-address"/>
+disable
+readonly
+value="
+placeholder=" (descreva o que deve ser escrito no input)
+<label> relaciona o input com a descrição
+autofocus 1 input por pagina
+inputs
+type=" range=" min=" max=" value="
+password
+email
+checkbox
+file - fazer upload de arquivo 
+number
+____________________________________
+
+FORMULARIOS
+
+<form> </form>
+metodo get - envia dados visivelmente pela URL
+
+metodo post - envia dados por baixo dos panos
+
+tipo dos botões
+reset - limpar campos
+file - enviar arquivos
+number - numeros
+email - somente e-mail
+entre outros
+enctype="multipart/form-data" 
+____________________________________
+
+BOTÕES
+<button> </button> 
+disabled
+tipos de botão
+____________________________________
+
+CLEAN CODE
+
+FORMATAR O DOCUMENTO
+SHIFT+ALT+F
+
+EsLint
+____________________________________
+
+HTML SEMANTICO
+
+____________________________________
+
+	Modulo 2 - CSS PT1
+CASCADING STYLE SHEETS
+FOLHA DE ESTILO EM CASCATA
+
+EX: <style>
+
+	h1 {
+	color: red;
+	}
+
+     </style> 
+
+não esquecer ponto e virgula, obrigatorio.
+
+Linkar
+
+acima da tag title
+<link rel="stylesheet" href="./styles.css">
+
+____________________________________
+SELETOR
+
+
+* - APLICA CONFIGURAÇÃO PARA TUDO NA PAGINA
+
+ID(Identificador unico) seria como um CPF
+<h1 id="titulo">
+<p id="paragrafo">
+#titulo no css
+#paragrafo no css
+
+CLASS(classes) seria como um CEP
+<h1 class="titulo">
+.titulo no css
+____________________________________
+ESTILO EM CASCATA
+Sempre prevalecerá o que esta abaixo.
+Estilo cortado no inspec significa que tem alguem sobrepondo.
+
+____________________________________
+CORES
+
+DUAS FORMAS DE REPRESENTAR
+color: rgb 
+
+hexadecimal
+w3schools.com/css/css_colors_rgb.asp
+adobe color
+colorzilla 
+____________________________________
+Unidades de medidas
+
+ABSOLUTAS
+
+px(pixels)
+
+in(inches/polegadas)
+
+cm/mm (centimetro/milimetro)
+
+RELATIVAS
+
+% calcula o tamanho relativo ao elemento pai
+
+vw(view width) 1vw é 1% da largura da janela do navegador
+
+vh(view height) 1vw é 1% da altura da janela do navegador
+
+em é uma unidade relativa ao elemento pai
+
+rem é uma unidade relativa ao elemento raiz
+ 
+____________________________________
+!important
+____________________________________
+POSITIONS 
+____________________________________
+PSEUDO ELEMENTOS
+
+Usar o nome o local seguido de :: 
+
+exemplo
+
+p::first-letter
+
+AFTER E BEFORE
+____________________________________
+PSEUDO CLASSES
+
+UTILIZAR SOMENTE 2 PONTOS
+EXEMPLO
+a:active
+a:visited
+a:hover (mais utilizado)
+a:checked
+a:disable
+a:enable
+a:focus
+a:readonly
+a:empty
+____________________________________
+RESPONSIVIDADE
+
+MEDIA CARE
+____________________________________
+MODULO 3 - GIT E GITHUB
+GIT - PERMITE FAZER VERSÕES DO CODIGO, VOLTAR NO TEMPO ETC
+
+GITHUB - PLATAFORMA ONDE VC COMPARTILHA SEU CODIGO, SALVA ETC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
